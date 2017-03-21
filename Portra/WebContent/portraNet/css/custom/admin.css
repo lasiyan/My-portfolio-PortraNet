@@ -1,0 +1,199 @@
+.tg {margin-top: 30px;}
+#admin-wrap {
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+			.admin {
+				width: 100%;
+				margin-top: 50px;
+			}
+			.admin-container {
+				width: 80%;
+				padding: 3%;
+				padding-top: 5%;
+				margin-left: 10%;
+			}
+			.admin-button {
+				text-align: center;
+			}
+			.admin-button button {
+				width: 16%;
+				padding: 7px;
+				margin-left: 5%;
+				margin-right: 5%;
+			}
+			.admin-search {
+				text-align: center;
+				padding: 10px;
+				margin-top: 30px;
+				margin-right: 5%;
+				margin-left: 5%;
+			}
+			.admin-search input {
+				width: 30%;
+				padding: 5px;
+			}
+			
+			.admin-resultWindow {
+				text-align: left;
+				margin: 20px 5%;
+				margin-top: 0px;
+				padding: 5px;
+			}
+			.admin-functionWindow {
+				text-align: center;
+				margin: 20px 5%;
+				padding: 5px;
+			}
+			.resultTable {border-collapse:collapse;border-spacing:0;border-color:#aabcfe;}
+			.resultTable td{text-align: center; font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#aabcfe;color:#669;background-color:#e8edff;}
+			.resultTable th{text-align: center; font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#aabcfe;color:#039;background-color:#b9c9fe;}
+			
+			.resultTable {
+				width: 100%;
+			}
+			
+			/* 관리자 기능 부분 */
+			.admin-functionWindow div {
+				width: 95%;
+				margin-left: 2.5%;
+			}
+			.admin-functionWindow div input {
+				width: 150px;
+				padding: 5px;
+			}
+			.admin-functionWindow div button {
+				padding: 5px;
+			}
+			#userDeleteName {
+				width: 304px;
+				margin-top: 15px;
+				margin-left: -5px;
+			}
+			#projectDeleteValue {
+				width: 271px;
+			}
+			#messageDeleteName, #messageDeleteContent {
+				width: 285px;
+			}
+			#messageDeleteContent {
+				margin-top: 15px;
+			}
+			#messageDeleteAll {
+				margin-top: 15px;
+				width: 379px;
+				margin-left: -4px;
+			}
+			
+			/* last ver.*/
+			.messageHeader th:nth-child(3) {
+				text-align: left;
+				padding-left: 30px;
+			}
+			.messageResult td:nth-child(3) {
+				text-align: left;
+				padding-left: 30px;
+			}
+			
+			@media( max-width: 920px ) {
+				.messageHeader th:nth-child(3) {
+					padding-left: 15px;
+				}
+				.messageResult td:nth-child(3) {
+					padding-left: 15px;
+				}
+			}
+			@media( max-width: 768px ) {
+				.resultTable {display: block;}
+			    .resultTable thead {display: block;}
+			    .resultTable tbody {display: block;}
+			    .resultTable tr {display: block;}
+			    .resultTable th {display: block;}
+			    .resultTable td {display: block;}
+			    .resultTable tr {
+			        border-bottom: 1px solid #ddd;
+			    }
+			 
+			    .resultTables th,
+			    .resultTable td {
+			        border-top: none;
+			        border-bottom: none;
+			        padding: 8px 3px;
+			    }
+			    
+			    .admin-container {
+			    	width: 90%;
+			    	margin-left: 5%;
+			    }
+			    .admin-button button {
+			    	width: 22%;
+			    }
+			    .admin-search input {
+			    	width: 60%;
+			    }
+			    
+			    .userHeader > th {
+			    	float: left;
+			    	width: 50%;
+			    }
+			    .resultTable-body .userResult td:nth-child(2n+1) {
+			    	float: left;
+			    	width: 50%;
+			    }
+			     
+			    .projectHeader th,
+			    .messageHeader th {background-color:#e8edff; border: 1px solid #aabcfe;  border-top: none; border-bottom: none;}
+			    
+			    .projectHeader th:nth-child(1),
+			    .messageHeader th:nth-child(1) {background-color:#aabcfe}
+			    
+			    .projectResult td:nth-child(1),
+			    .messageResult td:nth-child(1) {background-color:#aabcfe}
+				
+				.admin-functionWindow div input,
+				#userDeleteName,
+				#projectDeleteValue,			    
+			    #messageDeleteName,
+			    #messageDeleteContent {
+			    	width: 100%;
+					margin-left: auto;
+			    }
+			    .userFunction button,
+			    .projectFunction button,
+			    .messageFunction button,
+			    #messageDeleteAll {
+			    	width: 100%;
+				}
+				.messageHeader th:nth-child(3) {
+					text-align: center;
+					padding-left: auto;
+				}
+				.messageResult td:nth-child(3) {
+					text-align: center;
+					padding-left: auto;
+				}
+			}
+			@media( max-width: 480px ) {
+				.admin-button button {
+					width: 31%;
+					font-size: 13px;
+					padding: 7px;
+					margin-left: 0px;
+					margin-right: 0px;
+				}
+				.admin-search input {
+					width: 100%;
+				}
+				
+				.userHeader > th {
+			    	float: initial;
+			    	width: 100%;
+			    }
+			    .resultTable-body .userResult td:nth-child(2n+1) {
+			    	float: initial;
+			    	width: 100%;
+			    }
+			    .userHeader th {background-color:#e8edff;  border: 1px solid #aabcfe; border-top: none; border-bottom: none;}
+			    .userHeader th:nth-child(1) {background-color:#aabcfe}
+			    .userHeader td:nth-child(1) {background-color:#aabcfe}
+			}

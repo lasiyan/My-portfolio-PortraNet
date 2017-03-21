@@ -1,0 +1,86 @@
+/* About 텍스트 부분 */
+.main {	padding-top: 10%; padding-bottom: 6%; color: #444444 }
+
+/* About 이미지 부분 */
+.main-img {	padding-top: 4% }
+
+/* 메인 텍스트 - WHO AM I */
+.main-text {
+	padding-top: 3%;
+	padding-left: 10%;
+	letter-spacing: 2px;
+	word-spacing: 5px;
+}
+.main-text > h2 { font-size: 3em }
+
+/* 서브  텍스트 - Computer~ */
+.sub-text {
+	padding-left: 10%;
+	margin-top: -15px;
+	letter-spacing: 5px;
+	word-spacing: 3px;
+}
+.sub-text > h5 { font-size: 0.8em; color: #8A6D3B }
+
+/* 이름  텍스트 - 오원열~ */
+.name-text {
+	padding-left: 10%;
+	padding-top: 7%;
+	padding-bottom: 13%;
+	word-spacing: 2.5px;
+	font-size: 0.9em;
+}
+
+/* list 전체 div */
+.list-text { text-align: left; font-size: 0.85em }
+.list-text ul li { margin-bottom: 5px }
+
+/* 연도 부분 div */
+.year-list {
+	width: 20%;
+	margin-right: 0;
+	float: left;
+	padding-left: 2%;
+	color: #777777;
+}
+
+/* 연도에 따른 약력 div */
+.info-list { width: 50%; float: left }
+.info-list > ul { padding-left: 10%;}
+
+/* 이미지 조절 공백 div */
+.img-blank1 { height: 100px }
+
+/* 이미지 - profil 사진 */
+.img-layout > a > img { width: 80%;	margin-left: 10% }
+
+
+/********************* Main 미디어쿼리 *********************/
+/* 최대 해상도가 990픽셀일 때 - 텍스트, 이미지 크기 조정 */
+@media (max-width: 990px) {
+	.main-text { padding-left: 0; text-align: center; }
+	.main { padding-top: 3% }
+	.main-img { padding-top: 0; }
+	.sub-text {	padding-left: 0; text-align: center; }
+	.name-text { padding-left: 0; text-align: center; padding-bottom: 5%; }
+	.year-list {
+		width: 40%;
+		margin: 0; padding: 0;
+		text-align: right; padding-right: 50px;
+	}
+	.info-list { float: inherit; width: 100%; padding-left: 45%; }
+	.img-blank1 {display: none;}
+	.img-layout > a img {
+		-ms-transform: scale(0.6);
+		-webkit-transform: scale(0.6);
+		transform: scale(0.6);
+		margin-top: -15%; margin-bottom: -15%;
+	}
+}
+
+@media (max-width: 480px) {
+	.main { padding-top: 15% }
+	.sub-text { margin-top: -5px;}
+	.info-list { padding-left: 40%;}
+	.img-layout { margin-bottom: 40px;}
+}

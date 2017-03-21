@@ -1,0 +1,116 @@
+/* Modal View CSS */
+.bookmarkState {
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	word-break: keep-all;
+}
+
+.modal-size {
+	/*width: 80%;*/
+	height: auto;
+	margin-bottom: 60px;
+}
+.modal-content {
+	border-top-left-radius: 20px 20px;
+	border-top-right-radius: 20px 20px;
+	border-bottom-left-radius: 20px 20px;
+	border-bottom-right-radius: 20px 20px;
+}
+.modal-body img {
+	width: 100%;
+}
+.modal-header {
+	min-height: 200px;
+	background-image: url('../../../portraNet/images/modalHeader.JPG');
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-top-left-radius: 20px 20px;
+	border-top-right-radius: 20px 20px;
+	text-align: center;
+	border: 0.1px solid #CCCCCC;
+}
+.modal-title {
+	margin-top: 50px;
+	font-size: 2em;
+	font-weight: bold;
+	word-break: keep-all;
+}
+.modal-subtitle {
+	font-size: 1.1em;
+	word-break: keep-all;
+}
+.modal-infotext {
+	padding: 3px;
+	margin-bottom: 8px;
+}
+.modal-infotext > p{
+	word-break: keep-all;
+}
+
+.modal-body { background-color: #DDDDDD;}
+
+.modal-footer {
+	padding-top: 10px; padding-bottom: 10px;
+	margin-top: 0px;
+}
+
+/* 마이페이지 Modal view */
+#myPageContent { float: initial; width: 100% }
+.bookmarkList{
+	width: 45%; /*ver3.0*/
+	height: 300px; /*ver3.0*/
+	float: left; /*ver3.0*/
+	margin-left: 2.5%; /*ver3.0*/
+	margin-right: 2.5%; /*ver3.0*/
+	margin-bottom: 30px; //*ver3.0*/
+	padding-bottom: 40px;
+}
+.mypageImg { margin-top : 8%; height: 251px }
+	
+.mypageTitle {
+	width: 35%;
+	position: absolute;
+	margin-top : 10px;
+	font-size: 12px;
+	text-align: center;
+	padding-left: 7.7%;
+}
+
+.bmlistDelete {
+	margin-top : 10px;
+	font-size: 12px;
+	float: right;
+}
+.modal-footer { clear: both }
+
+/* 모달 사이즈 재조정 */
+@media (max-width: 767px) {
+	.modal-size{ width: auto }
+	.bookmarkList {
+		padding-bottom: 0;
+		width: auto;
+		height: auto;
+		float: initial;
+	}
+	.mypageImg {
+		width: 60% !important; 
+		margin-left: 20%;
+		margin-top: 5%;
+	}
+	.mypageTitle { width: 63%; padding-left: 27% }
+	.bmlistDelete {	margin-right: 20% }
+}
+
+@media (max-width: 480px) {
+	#myPageContent { padding-bottom: auto; float: initial }
+	.modal-body img{ max-width: 100% }
+	
+	.mypageImg { width: 90% !important; margin-left: 5% !important }
+	.mypageTitle {
+		font-size: 12px !important;
+		padding-left: 25%;
+		word-break: keep-all;
+	}
+	.bmlistDelete {	margin-right: 5% !important; font-size: 12px }
+}

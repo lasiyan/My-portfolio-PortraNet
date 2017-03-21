@@ -1,0 +1,5 @@
+/* 글꼴 지정 : 나눔바른고딕 */
+body {
+	font-family: "NanumBarunGothic",  sans-serif; 
+	padding-top: 90px;
+}

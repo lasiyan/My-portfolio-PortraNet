@@ -1,0 +1,42 @@
+/* About 블록 */
+.block1 { height: 170px; background-color: #555555 }
+.block1 > p {
+	font-size: 3em;
+	color: #BBBBBB;
+	font-family: 'Merriweather', serif;
+	font-style : italic;
+	font-weight : bold;
+	text-align: center;
+	line-height:170px;
+	text-decoration: none;
+}
+.block1-hr {
+	margin-top: -30px;
+	height: 2px;
+	width: 100%;
+	border: none;
+	border-top: 1px solid #AAAAAA;
+	border-bottom: 1px solid #AAAAAA;
+	background: none;
+}
+
+/* Project 블록 */
+.block2 > img {
+	margin: 0;
+	width: 100%;
+	max-height: 510px;
+	min-height: 252px;
+}
+
+/* Contact 블록 */
+.block3 > img {
+	margin: 0;
+	width: 100%;
+	max-height: 510px;
+	min-height: 252px;
+}
+
+@media (max-width: 480px) {
+	.block1 { font-size: 0.8em;	}
+	.block2 > img, .block3 > img {min-height: 240px;}
+}

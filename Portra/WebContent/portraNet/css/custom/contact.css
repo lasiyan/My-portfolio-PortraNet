@@ -1,0 +1,117 @@
+/* Contact_list */
+#contact-wrap {
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.contact {
+	width: 100%;
+	margin:0px;
+	height:auto;
+	text-align : center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.contact-box {
+	width:450px;
+	height:auto;
+	margin:0 auto;
+	padding: 20px;
+	margin-top: 5%;
+	background-color : #000000;
+	opacity: 0.8;
+}
+.contact-box img {
+	margin-top:25px;
+	margin-bottom: 50px;
+}
+.contact-box h1 {
+	margin-top:0;
+	font-size: 20px;
+	color: #EDEDED;
+}
+.contact-box ul {
+	list-style:none;
+	color:#767676;
+}
+.contact-box ul a{
+	color:#767676;
+}
+.contact-box ul li {
+	margin-left : -45px;
+	font-size:14px;
+	margin-top : 5px;
+	text-decoration: none;
+}
+.input {
+	padding :10px;
+	margin-top: 60px;
+}
+.input input, textarea {
+	margin-bottom : 15px;
+	width : 80%;
+	height : 30px;
+	padding : 8px;
+	text-align:left;
+	background-color:transparent;
+	color:#777777;
+	border:0px solid;
+	border-bottom: 1px solid #555555;
+}
+.input >.i_message {
+	margin-top:10px;
+	text-align: top;
+	border:1px solid #555555;
+	height : 100px;
+}
+.send_btn {
+	width: 80%;
+	height: 40px;
+	clear:both;
+	text-align: center;
+	margin-bottom: 2%;
+	background-color: #BBBBBB;
+	border: none;
+}
+.send_btn:hover	{background-color: #eeeeee}
+
+
+/********************* Contact 미디어쿼리 *********************/
+/* 최소 해상도가 1140px일 때 - contact box 위치 조정  */
+@media (min-width: 1140px) {
+	.contact-box { margin-left: 60%;  }
+}
+
+/* 해상도가 921 이상 ~ 1140 미만일 때 - contact box 위치 조정 */
+@media (min-width: 921px) and (max-width: 1139px) {
+	.contact-box { margin-left: 50% }
+}
+
+/* 해상도가 769px ~ 920px 일 때 - contact box 위치 조정 */
+@media (min-width: 769px) and (max-width: 920px) {
+	.contact-box {
+		margin-left: 45%;
+		-ms-transform: scale(0.95);
+		-webkit-transform: scale(0.95);
+		transform: scale(0.95);
+	}
+}
+
+/* 해상도가 481px ~ 768px 일 때 - contact box 위치 조정 */
+@media (min-width: 481px) and (max-width: 768px) {
+	.contact-box {
+		-ms-transform: scale(0.87);
+		-webkit-transform: scale(0.87);
+		transform: scale(0.87);
+	}
+}
+
+/* 해상도가 480 미만일 때 */
+@media (max-width: 480px) {
+	.contact-box {
+		width: auto !important;
+		padding: 0 !important;
+		-ms-transform: scale(0.9);
+		-webkit-transform: scale(0.9);
+		transform: scale(0.9);
+	}
+}

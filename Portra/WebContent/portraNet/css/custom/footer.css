@@ -1,0 +1,12 @@
+/* Footer 파트 */
+.copyright {
+	height : 53px;
+	text-align: center;
+	line-height:53px;
+	text-decoration: none;
+	background-color: #111111;
+}
+.copyright p	{margin: 0;
+	color: #666666;
+	font-size: 1em;
+	text-align: center;}

@@ -1,0 +1,102 @@
+/* 네비게이션바에서 사용되는 폰트를 구글 웹 폰트로 설정 */ 
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400);
+
+/* top 버튼 스타일 설정 */
+.top-btn{
+	position: fixed;
+	bottom: 15px;
+	right: -40px;
+	z-index: 98;
+	opacity: 0.6;
+}
+.top-btn:hover {opacity: 1;}
+
+/* 네비게이션바 스타일 설정 */
+.navbar{
+	background-color: #000;
+	border: none;
+	padding-bottom: 10px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 200;
+	font-size: 15px;
+	height: 50px;
+	position: absolute;
+	margin-bottom: 0px;
+}
+.navbar-collapse { border-top-width: 0; }
+
+.logo01 {
+	position: absolute;
+	width: 18px;
+	height: 29px;
+	margin-top: 10px;
+	margin-left: 5%;
+}
+/* 모바일 적용시 어코디언 버튼 위치 설정 */
+.navbar-toggle {
+	position: relative;
+	border: none;
+	text-decoration: none;
+}
+/* 메뉴 위치 설정 */
+.navbar-nav {
+	padding-right: 10px;
+	background-color: #000000;
+	margin-top: 0;
+	border: none;
+}
+
+/* 메뉴 텍스트 간격 설정 */
+.navbar-nav li { margin:0 20px }
+
+.navbar-default .navbar-nav li a:hover { color: white }
+
+/* Navbar ver1.1 */
+/* LOGIN */
+#login-img,
+#mypage-img {
+	display: none;
+	max-width: 100%;
+	max-height: 100%;
+	width: 40px;
+	height: 24px;
+	margin: 12px auto;
+	margin-right: 5px;
+	border: none;
+	position: relative;
+	float: right;
+	cursor: pointer;
+}
+.navbar-header img:hover {transform:scale(1.1, 1.1)}
+.navbar {position:fixed;}
+
+
+
+/********************* Main 미디어쿼리 *********************/
+/* 최대 해상도가 320픽셀일 때 - 로고 사이즈 조정 */
+@media (max-width: 320px)  { 
+	.logo01 {
+		width: 18px;
+		height: 29px;
+		margin-top: 10px;
+		margin-left: 5%;
+	}  
+} 
+
+/* 최대 해상도가 767픽셀일 때 - li 텍스트 중앙으로 모음 */
+@media (max-width: 767px) {
+	.navbar-nav li { text-align: center; }
+	
+	/* Navbar ver1.1*/
+	#login-img, #mypage-img { display: block }
+	#login-text { display: none !important }
+}
+@media (min-width: 768px) {
+	/* Navbar ver1.1*/
+	#login-img { display: none !important}
+}
+
+/* 최대 해상도가 980픽셀일 때 - 각 메뉴사이의 간격을 10픽셀로 조정 */
+@media (max-width: 980px) {
+	.navbar-nav li { margin:0 10px;}
+}

@@ -1,0 +1,93 @@
+/* 캐러셀 좌우 여백 없애기 */
+.container-fluid { padding: 0; margin: 0;}
+
+.carousel {
+	display: block;
+	width: 100%;
+	z-index: 99;
+}
+#image {min-width: 100%;}
+
+.carousel-indicators {
+	position: absolute;
+	z-index: 3;
+}
+.carousel-indicators li{
+	display: inline-block;
+	width:7.8px;
+	height: 7.8px;
+	margin-left: 16px;
+	margin-right: 16px;
+	text-decoration: none;
+	border: none;
+	background-color: #666666;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.carousel-indicators .active {
+	width:7.8px;
+	height: 7.8px;
+	margin-left: 16px;
+	margin-right: 16px;
+    background-color: #FFFFFF;
+}
+
+.intro_box {
+	position: absolute;
+	width: 500px;
+	margin-left: calc((100% - 500px)/2);
+	text-align: center;
+	z-index: 1;
+	background-color: #444444;
+	opacity: 0.9;
+	margin-top: 50px;
+}
+
+.ibox-title {
+	width: 500px;
+	z-index: 0;
+	height: calc(50% - 50px);
+	padding-top: 20%;
+}
+.ibox-title > p {
+	font-size: 60px;
+	color:#C0C0C0;
+	letter-spacing: 7px;
+	word-spacing: 1px;
+}
+
+.ibox-sub {
+	position: relative;
+	width: 350px;
+	margin-left: 75px;
+}
+.ibox-sub > h4 {
+	font-size: 20px;
+	color:#F7F7F7;
+	margin-top: 60px;
+	word-spacing: 0px;
+}
+.ibox-sub > p {
+	color:#AAAAAA;
+	margin-top: 20px;
+	padding: 10px;
+}
+
+
+/********************* Carousel 미디어쿼리 *********************/
+/* 최대 해상도가 767px일 때 - 텍스트, 박스 사이즈 조정 */
+@media (max-width: 767px) {
+	.intro_box {width: 400px; margin-left: calc((100% - 400px)/2);}
+	.ibox-title {width: 400px;}
+	.ibox-title > p {font-size: 50px; letter-spacing: 6px;}
+	.ibox-sub {width: 300px; margin-left: 50px;}
+	.ibox-sub > h4 {font-size: 17px;}
+}
+
+@media (max-width: 480px) {
+	.ibox-title {width: 100%;}
+	.ibox-title > p {letter-spacing: 4px;}
+	.ibox-sub > h4 {font-size: 17px;}
+	.ibox-sub > p {font-size: 0.9em;}
+}
