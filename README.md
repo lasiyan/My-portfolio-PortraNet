@@ -52,4 +52,6 @@ HTML5, CSS3, jQuery, Bootstrap, JSP, JDBC, Java, Ajax, javascript
 
 ## 실행 결과
 
-추 후 업로드 예정
+[![Demo Doccou alpha](https://j.gifs.com/mwpPJE.gif)](https://www.youtube.com/watch?v=LRacwPgSj34)
+
+(클릭 시 유튜브로 이동합니다)
